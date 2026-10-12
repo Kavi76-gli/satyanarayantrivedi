@@ -1,0 +1,1407 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0"
+>
+
+<title>Official Updates | Join Our Community</title>
+
+<meta
+name="description"
+content="Join our WhatsApp Channel for official platform links, updates, announcements and important information."
+>
+
+<meta
+name="theme-color"
+content="#03100a"
+>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+
+<link
+rel="preconnect"
+href="https://fonts.gstatic.com/"
+crossorigin
+>
+
+<link
+href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900\&display=swap"
+rel="stylesheet"
+>
+
+<!-- Font Awesome -->
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+>
+
+<style>
+
+:root {
+--bg: #020604;
+--bg-2: #06120b;
+
+--green: #25d366;
+--green-bright: #63f58a;
+--green-dark: #0ca84b;
+
+--white: #f5faf7;
+--text: #d9e6de;
+
+--muted: #91a198;
+--muted-2: #68776f;
+
+--gold: #f6bd45;
+
+--border: rgba(91, 255, 133, 0.15);
+
+--glass: rgba(8, 23, 15, 0.78);
+}
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+width: 100%;
+min-height: 100vh;
+
+font-family: "Inter", sans-serif;
+
+color: var(--white);
+
+background:
+radial-gradient(
+circle at 50% -10%,
+rgba(37, 211, 102, 0.15),
+transparent 38%
+),
+
+radial-gradient(
+circle at 0% 70%,
+rgba(37, 211, 102, 0.06),
+transparent 30%
+),
+
+radial-gradient(
+circle at 100% 85%,
+rgba(246, 189, 69, 0.06),
+transparent 30%
+),
+
+var(--bg);
+
+overflow-x: hidden;
+}
+
+/* =====================================
+BACKGROUND GRID
+===================================== */
+
+body::before {
+content: "";
+
+position: fixed;
+inset: 0;
+
+pointer-events: none;
+
+opacity: 0.55;
+
+background-image:
+linear-gradient(
+rgba(255,255,255,0.018) 1px,
+transparent 1px
+),
+
+linear-gradient(
+90deg,
+rgba(255,255,255,0.018) 1px,
+transparent 1px
+);
+
+background-size: 60px 60px;
+
+mask-image:
+linear-gradient(
+to bottom,
+black,
+transparent 90%
+);
+}
+
+/* =====================================
+GLOW ORBS
+===================================== */
+
+.orb {
+position: fixed;
+
+width: 320px;
+height: 320px;
+
+border-radius: 50%;
+
+filter: blur(110px);
+
+opacity: 0.12;
+
+pointer-events: none;
+
+z-index: 0;
+
+animation:
+orbFloat 9s ease-in-out infinite;
+}
+
+.orb-green {
+background: var(--green);
+
+left: -170px;
+top: 10%;
+}
+
+.orb-gold {
+background: var(--gold);
+
+right: -170px;
+bottom: 8%;
+
+animation-delay: -4s;
+}
+
+@keyframes orbFloat {
+
+0%,
+100% {
+transform:
+translate3d(0, 0, 0);
+}
+
+50% {
+transform:
+translate3d(0, -35px, 0);
+}
+}
+
+/* =====================================
+PAGE
+===================================== */
+
+.page {
+width: 100%;
+min-height: 100vh;
+
+display: flex;
+
+justify-content: center;
+align-items: center;
+
+padding: 35px 18px;
+
+position: relative;
+
+z-index: 2;
+}
+
+/* =====================================
+MAIN CONTAINER
+===================================== */
+
+.container {
+width: min(100%, 720px);
+
+position: relative;
+}
+
+/* =====================================
+TOP BRAND
+===================================== */
+
+.brand {
+display: flex;
+
+justify-content: center;
+align-items: center;
+
+gap: 11px;
+
+margin-bottom: 22px;
+
+animation:
+fadeDown .7s ease both;
+}
+
+.brand-mark {
+width: 44px;
+height: 44px;
+
+display: grid;
+place-items: center;
+
+border-radius: 14px;
+
+background:
+linear-gradient(
+145deg,
+#37e879,
+#079b42
+);
+
+color: white;
+
+font-size: 19px;
+
+box-shadow:
+0 0 30px
+rgba(37,211,102,.18);
+}
+
+.brand-text {
+text-align: left;
+}
+
+.brand-text small {
+display: block;
+
+font-size: 9px;
+
+letter-spacing: 2.8px;
+
+text-transform: uppercase;
+
+color: var(--muted);
+
+margin-bottom: 3px;
+}
+
+.brand-text strong {
+display: block;
+
+font-size: 17px;
+
+letter-spacing: -.3px;
+}
+
+/* =====================================
+MAIN CARD
+===================================== */
+
+.card {
+position: relative;
+
+overflow: hidden;
+
+padding: 42px 38px 35px;
+
+border-radius: 30px;
+
+border:
+1px solid
+var(--border);
+
+background:
+linear-gradient(
+145deg,
+rgba(10,29,19,.94),
+rgba(2,10,7,.97)
+);
+
+box-shadow:
+0 35px 100px
+rgba(0,0,0,.58),
+
+inset 0 1px 0
+rgba(255,255,255,.025),
+
+inset 0 0 80px
+rgba(37,211,102,.018);
+
+backdrop-filter: blur(24px);
+
+animation:
+cardIn .8s ease both;
+}
+
+.card::before {
+content: "";
+
+position: absolute;
+
+width: 420px;
+height: 420px;
+
+left: 50%;
+top: -310px;
+
+transform:
+translateX(-50%);
+
+border-radius: 50%;
+
+background:
+rgba(37,211,102,.08);
+
+filter: blur(75px);
+
+pointer-events: none;
+}
+
+.card::after {
+content: "";
+
+position: absolute;
+
+left: 12%;
+right: 12%;
+
+top: 0;
+
+height: 1px;
+
+background:
+linear-gradient(
+90deg,
+transparent,
+rgba(99,245,138,.45),
+transparent
+);
+
+opacity: .7;
+}
+
+/* =====================================
+STATUS
+===================================== */
+
+.status {
+width: fit-content;
+
+margin:
+0 auto 25px;
+
+display: flex;
+
+align-items: center;
+
+gap: 8px;
+
+padding:
+8px 13px;
+
+border-radius: 100px;
+
+border:
+1px solid
+rgba(37,211,102,.18);
+
+background:
+rgba(37,211,102,.055);
+
+color:
+#c7f5d2;
+
+font-size: 9px;
+
+font-weight: 800;
+
+letter-spacing: 1.2px;
+
+animation:
+fadeUp .8s .1s ease both;
+}
+
+.status-dot {
+width: 7px;
+height: 7px;
+
+border-radius: 50%;
+
+background:
+var(--green);
+
+box-shadow:
+0 0 12px
+var(--green);
+
+animation:
+statusPulse 1.8s infinite;
+}
+
+@keyframes statusPulse {
+
+0% {
+box-shadow:
+0 0 0 0
+rgba(37,211,102,.55);
+}
+
+70% {
+box-shadow:
+0 0 0 7px
+rgba(37,211,102,0);
+}
+
+100% {
+box-shadow:
+0 0 0 0
+rgba(37,211,102,0);
+}
+}
+
+/* =====================================
+WHATSAPP ICON
+===================================== */
+
+.whatsapp-logo {
+width: 92px;
+height: 92px;
+
+margin:
+0 auto 25px;
+
+display: grid;
+place-items: center;
+
+border-radius: 27px;
+
+background:
+linear-gradient(
+145deg,
+#43ed82,
+#079d43
+);
+
+color: white;
+
+font-size: 48px;
+
+box-shadow:
+0 18px 50px
+rgba(37,211,102,.18),
+
+inset 0 1px 0
+rgba(255,255,255,.3);
+
+animation:
+floatLogo 4s ease-in-out infinite,
+fadeUp .8s .15s ease both;
+}
+
+@keyframes floatLogo {
+
+0%,
+100% {
+transform:
+translateY(0);
+}
+
+50% {
+transform:
+translateY(-7px);
+}
+}
+
+/* =====================================
+HEADING
+===================================== */
+
+h1 {
+max-width: 620px;
+
+margin:
+0 auto 18px;
+
+font-size:
+clamp(
+36px,
+7vw,
+58px
+);
+
+line-height: 1.02;
+
+letter-spacing: -3px;
+
+text-align: center;
+
+animation:
+fadeUp .8s .2s ease both;
+}
+
+h1 span {
+display: block;
+
+color:
+var(--green);
+
+text-shadow:
+0 0 30px
+rgba(37,211,102,.16);
+}
+
+/* =====================================
+DESCRIPTION
+===================================== */
+
+.description {
+max-width: 570px;
+
+margin:
+0 auto 27px;
+
+text-align: center;
+
+color:
+var(--muted);
+
+font-size: 14px;
+
+line-height: 1.75;
+
+animation:
+fadeUp .8s .3s ease both;
+}
+
+/* =====================================
+INFORMATION CARDS
+===================================== */
+
+.features {
+display: grid;
+
+grid-template-columns:
+repeat(3, 1fr);
+
+gap: 10px;
+
+margin-bottom: 25px;
+
+animation:
+fadeUp .8s .4s ease both;
+}
+
+.feature {
+min-height: 105px;
+
+padding:
+17px 13px;
+
+text-align: center;
+
+border:
+1px solid
+rgba(255,255,255,.055);
+
+border-radius: 17px;
+
+background:
+rgba(255,255,255,.018);
+
+transition:
+transform .25s ease,
+border-color .25s ease,
+background .25s ease;
+}
+
+.feature:hover {
+transform:
+translateY(-3px);
+
+border-color:
+rgba(37,211,102,.18);
+
+background:
+rgba(37,211,102,.035);
+}
+
+.feature-icon {
+width: 35px;
+height: 35px;
+
+margin:
+0 auto 10px;
+
+display: grid;
+place-items: center;
+
+border-radius: 11px;
+
+color:
+var(--green);
+
+background:
+rgba(37,211,102,.09);
+
+font-size: 14px;
+}
+
+.feature strong {
+display: block;
+
+font-size: 11px;
+
+color:
+#dbe9e0;
+
+margin-bottom: 4px;
+}
+
+.feature p {
+color:
+var(--muted-2);
+
+font-size: 9px;
+
+line-height: 1.45;
+}
+
+/* =====================================
+INFO BOX
+===================================== */
+
+.info-box {
+display: flex;
+
+align-items: flex-start;
+
+gap: 12px;
+
+padding:
+15px 16px;
+
+margin-bottom: 23px;
+
+border-radius: 17px;
+
+border:
+1px solid
+rgba(246,189,69,.11);
+
+background:
+rgba(246,189,69,.035);
+
+text-align: left;
+
+animation:
+fadeUp .8s .45s ease both;
+}
+
+.info-icon {
+width: 30px;
+height: 30px;
+
+flex-shrink: 0;
+
+display: grid;
+place-items: center;
+
+border-radius: 50%;
+
+background:
+rgba(246,189,69,.09);
+
+color:
+var(--gold);
+
+font-size: 13px;
+}
+
+.info-box strong {
+display: block;
+
+margin-bottom: 4px;
+
+color:
+#e8eee9;
+
+font-size: 11px;
+}
+
+.info-box p {
+color:
+#7f8d85;
+
+font-size: 10px;
+
+line-height: 1.6;
+}
+
+/* =====================================
+CTA
+===================================== */
+
+.cta {
+width: 100%;
+
+min-height: 64px;
+
+display: flex;
+
+justify-content: center;
+align-items: center;
+
+gap: 12px;
+
+padding:
+15px 22px;
+
+border-radius: 17px;
+
+text-decoration: none;
+
+color: white;
+
+background:
+linear-gradient(
+135deg,
+#25d866,
+#0aa544
+);
+
+border:
+1px solid
+rgba(145,255,171,.45);
+
+box-shadow:
+0 16px 42px
+rgba(20,190,75,.20),
+
+inset 0 1px 0
+rgba(255,255,255,.22);
+
+font-size: 13px;
+
+font-weight: 900;
+
+letter-spacing: .5px;
+
+transition:
+transform .25s ease,
+filter .25s ease,
+box-shadow .25s ease;
+
+animation:
+fadeUp .8s .5s ease both;
+}
+
+.cta:hover {
+transform:
+translateY(-3px);
+
+filter:
+brightness(1.07);
+
+box-shadow:
+0 22px 50px
+rgba(20,190,75,.31),
+
+inset 0 1px 0
+rgba(255,255,255,.25);
+}
+
+.cta:active {
+transform:
+translateY(0);
+}
+
+.cta-icon {
+width: 34px;
+height: 34px;
+
+display: grid;
+place-items: center;
+
+border-radius: 50%;
+
+background:
+rgba(255,255,255,.17);
+
+font-size: 18px;
+}
+
+.cta-arrow {
+margin-left: 4px;
+
+opacity: .7;
+
+font-size: 12px;
+}
+
+/* =====================================
+FOOTER
+===================================== */
+
+.footer {
+display: flex;
+
+justify-content: center;
+align-items: center;
+
+gap: 7px;
+
+margin-top: 18px;
+
+color:
+#66756c;
+
+font-size: 9px;
+
+line-height: 1.5;
+
+animation:
+fadeUp .8s .6s ease both;
+}
+
+.footer i {
+color:
+#7e9185;
+}
+
+/* =====================================
+ANIMATIONS
+===================================== */
+
+@keyframes fadeDown {
+
+from {
+opacity: 0;
+
+transform:
+translateY(-12px);
+}
+
+to {
+opacity: 1;
+
+transform:
+translateY(0);
+}
+}
+
+@keyframes fadeUp {
+
+from {
+opacity: 0;
+
+transform:
+translateY(18px);
+}
+
+to {
+opacity: 1;
+
+transform:
+translateY(0);
+}
+}
+
+@keyframes cardIn {
+
+from {
+opacity: 0;
+
+transform:
+translateY(25px)
+scale(.985);
+}
+
+to {
+opacity: 1;
+
+transform:
+translateY(0)
+scale(1);
+}
+}
+
+/* =====================================
+MOBILE
+===================================== */
+
+@media (max-width: 620px) {
+
+.page {
+padding:
+20px 11px;
+}
+
+.card {
+padding:
+30px 18px 25px;
+
+border-radius:
+25px;
+}
+
+.brand {
+margin-bottom:
+18px;
+}
+
+.brand-mark {
+width: 40px;
+height: 40px;
+
+border-radius: 12px;
+
+font-size: 17px;
+}
+
+.brand-text strong {
+font-size: 15px;
+}
+
+.status {
+margin-bottom:
+20px;
+}
+
+.whatsapp-logo {
+width: 78px;
+height: 78px;
+
+border-radius: 22px;
+
+font-size: 40px;
+
+margin-bottom:
+21px;
+}
+
+h1 {
+font-size:
+clamp(
+34px,
+10vw,
+44px
+);
+
+letter-spacing:
+-2px;
+
+margin-bottom:
+15px;
+}
+
+.description {
+font-size:
+12px;
+
+line-height:
+1.7;
+
+margin-bottom:
+21px;
+}
+
+.features {
+gap: 7px;
+
+margin-bottom:
+18px;
+}
+
+.feature {
+min-height:
+96px;
+
+padding:
+13px 7px;
+
+border-radius:
+14px;
+}
+
+.feature-icon {
+width: 31px;
+height: 31px;
+
+font-size:
+12px;
+
+margin-bottom:
+8px;
+}
+
+.feature strong {
+font-size:
+9px;
+}
+
+.feature p {
+font-size:
+7.5px;
+}
+
+.info-box {
+padding:
+13px;
+
+margin-bottom:
+18px;
+}
+
+.info-box strong {
+font-size:
+10px;
+}
+
+.info-box p {
+font-size:
+9px;
+}
+
+.cta {
+min-height:
+59px;
+
+font-size:
+12px;
+
+padding:
+14px 15px;
+}
+
+.cta-icon {
+width: 31px;
+height: 31px;
+
+font-size:
+16px;
+}
+
+.footer {
+font-size:
+8px;
+}
+}
+
+@media (max-height: 700px) {
+
+.page {
+padding:
+15px 10px;
+}
+
+.card {
+padding:
+25px 18px 21px;
+}
+
+.brand {
+margin-bottom:
+12px;
+}
+
+.status {
+margin-bottom:
+14px;
+}
+
+.whatsapp-logo {
+width: 66px;
+height: 66px;
+
+font-size: 34px;
+
+margin-bottom:
+14px;
+}
+
+h1 {
+font-size:
+31px;
+
+margin-bottom:
+9px;
+}
+
+.description {
+margin-bottom:
+14px;
+}
+
+.features {
+margin-bottom:
+13px;
+}
+
+.feature {
+min-height:
+78px;
+
+padding:
+10px 6px;
+}
+
+.info-box {
+margin-bottom:
+13px;
+
+padding:
+10px 12px;
+}
+
+.cta {
+min-height:
+54px;
+}
+
+.footer {
+margin-top:
+9px;
+}
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="orb orb-green"></div>
+
+<div class="orb orb-gold"></div>
+
+<main class="page">
+
+<div class="container">
+
+<!-- BRAND -->
+
+<div class="brand">
+
+<div class="brand-mark">
+
+<i class="fa-solid fa-bolt"></i>
+
+</div>
+
+<div class="brand-text">
+
+<small>
+Official
+</small>
+
+<strong>
+Community Updates
+</strong>
+
+</div>
+
+</div>
+
+<!-- MAIN CARD -->
+
+<section class="card">
+
+<!-- STATUS -->
+
+<div class="status">
+
+<span class="status-dot"></span>
+
+OFFICIAL UPDATES & LINKS
+
+</div>
+
+<!-- WHATSAPP ICON -->
+
+<div class="whatsapp-logo">
+
+<i class="fa-brands fa-whatsapp"></i>
+
+</div>
+
+<!-- HEADING -->
+
+<h1>
+
+Need the latest
+
+<span>
+App & Website Link?
+</span>
+
+</h1>
+
+<!-- DESCRIPTION -->
+
+<p class="description">
+
+Join our WhatsApp Channel to receive the
+latest platform links, announcements,
+updates and important information in one place.
+
+</p>
+
+<!-- FEATURES -->
+
+<div class="features">
+
+<div class="feature">
+
+<div class="feature-icon">
+
+<i class="fa-solid fa-link"></i>
+
+</div>
+
+<strong>
+Official Links
+</strong>
+
+<p>
+Access the latest available
+platform links.
+</p>
+
+</div>
+
+<div class="feature">
+
+<div class="feature-icon">
+
+<i class="fa-solid fa-bell"></i>
+
+</div>
+
+<strong>
+Updates
+</strong>
+
+<p>
+Stay informed about important
+announcements.
+</p>
+
+</div>
+
+<div class="feature">
+
+<div class="feature-icon">
+
+<i class="fa-solid fa-circle-info"></i>
+
+</div>
+
+<strong>
+Information
+</strong>
+
+<p>
+Find important information
+shared with the community.
+</p>
+
+</div>
+
+</div>
+
+<!-- INFORMATION -->
+
+<div class="info-box">
+
+<div class="info-icon">
+
+<i class="fa-solid fa-shield-halved"></i>
+
+</div>
+
+<div>
+
+<strong>
+Use the official community channel
+</strong>
+
+<p>
+
+Follow the channel for links and
+announcements published through
+the community. Always review
+information carefully before using
+any platform or service.
+
+</p>
+
+</div>
+
+</div>
+
+<!-- CTA -->
+
+<a
+href="https://whatsapp.com/channel/0029Vb8p6cgFMqrPlAuCzG3Z"
+id="whatsappChannelJoin"
+class="cta"
+target="_blank"
+rel="noopener noreferrer"
+>
+
+<span class="cta-icon">
+
+<i class="fa-brands fa-whatsapp"></i>
+
+</span>
+
+<span>
+JOIN WHATSAPP CHANNEL
+</span>
+
+<i
+class="fa-solid fa-arrow-right cta-arrow"
+></i>
+
+</a>
+
+<!-- FOOTER -->
+
+<div class="footer">
+
+<i class="fa-solid fa-circle-check"></i>
+
+Follow the channel for the latest
+links and community announcements.
+
+</div>
+
+</section>
+
+</div>
+
+</main>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1404898991813648');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1404898991813648&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+</body>
+
+</html>
