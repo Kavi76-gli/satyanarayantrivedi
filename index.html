@@ -17,7 +17,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
         rel="stylesheet">
 
-<!-- Meta Pixel Code -->
+    <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -133,29 +133,6 @@ src="https://www.facebook.com/tr?id=1404898991813648&ev=PageView&noscript=1"
             background: var(--green);
             margin-right: 8px;
             box-shadow: 0 0 12px var(--green);
-        }
-
-        /* LANGUAGE BUTTON */
-
-        .language-tools {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .language-change {
-            border: 1px solid var(--line);
-            background: rgba(0, 0, 0, .25);
-            color: var(--white);
-            border-radius: 30px;
-            padding: 10px 14px;
-            font: 600 12px Inter, Arial, sans-serif;
-            cursor: pointer;
-        }
-
-        .language-change:hover {
-            border-color: var(--green);
-            color: var(--green-soft);
         }
 
         /* HERO */
@@ -470,105 +447,6 @@ src="https://www.facebook.com/tr?id=1404898991813648&ev=PageView&noscript=1"
             font-size: 12px;
         }
 
-        /* LANGUAGE POPUP */
-
-        .language-overlay {
-            position: fixed;
-            inset: 0;
-            z-index: 99999;
-            display: none;
-            align-items: center;
-            justify-content: center;
-            padding: 18px;
-            background: rgba(0, 5, 2, .88);
-            backdrop-filter: blur(12px);
-        }
-
-        .language-overlay.open {
-            display: flex;
-        }
-
-        .language-dialog {
-            width: min(480px, 100%);
-            max-height: min(88vh, 720px);
-            overflow: auto;
-            border: 1px solid rgba(53, 255, 82, .45);
-            border-radius: 24px;
-            padding: 26px;
-            color: var(--white);
-
-            background: linear-gradient(145deg, #092216, #031009);
-
-            box-shadow:
-                0 20px 80px rgba(0, 0, 0, .55),
-                0 0 35px rgba(53, 255, 82, .12);
-        }
-
-        .language-mark {
-            width: 52px;
-            height: 52px;
-            border-radius: 16px;
-            display: grid;
-            place-items: center;
-            margin-bottom: 15px;
-            background: linear-gradient(135deg, #ffe17b, #f49b00);
-            color: #111;
-            font-size: 26px;
-            font-weight: 900;
-        }
-
-        .language-dialog h2 {
-            margin: 0 0 8px;
-            font-size: 25px;
-        }
-
-        .language-dialog p {
-            margin: 0 0 18px;
-            color: #b8c9bd;
-            font-size: 13px;
-            line-height: 1.6;
-        }
-
-        .language-select {
-            width: 100%;
-            padding: 14px;
-            border-radius: 12px;
-            border: 1px solid rgba(65, 255, 91, .35);
-            background: #06150d;
-            color: #fff;
-            font: 600 15px Inter, Arial, sans-serif;
-            outline: none;
-        }
-
-        .language-continue {
-            width: 100%;
-            margin-top: 15px;
-            padding: 15px;
-            border: 0;
-            border-radius: 12px;
-            background: linear-gradient(135deg, #42ff5c, #13c83b);
-            color: #031007;
-            font: 900 15px Inter, Arial, sans-serif;
-            cursor: pointer;
-        }
-
-        .language-continue:disabled {
-            opacity: .65;
-            cursor: wait;
-        }
-
-        .language-status {
-            min-height: 18px;
-            margin-top: 12px !important;
-            margin-bottom: 0 !important;
-            color: #9cff75 !important;
-            font-size: 12px !important;
-        }
-
-        body.language-lock {
-            overflow: hidden;
-        }
-
         /* RESPONSIVE */
 
         @media (max-width: 850px) {
@@ -599,17 +477,6 @@ src="https://www.facebook.com/tr?id=1404898991813648&ev=PageView&noscript=1"
             .coin {
                 width: 42px;
                 height: 42px;
-            }
-
-            .language-tools {
-                flex-direction: column;
-                align-items: flex-end;
-                gap: 7px;
-            }
-
-            .language-change {
-                padding: 8px 10px;
-                font-size: 11px;
             }
 
             .hero {
@@ -661,78 +528,12 @@ src="https://www.facebook.com/tr?id=1404898991813648&ev=PageView&noscript=1"
                 font-size: 14px;
                 padding: 0 12px;
             }
-
-            .language-dialog {
-                padding: 22px;
-                border-radius: 19px;
-            }
         }
     </style>
+
 </head>
 
-
 <body>
-
-    <!-- LANGUAGE SELECTION POPUP -->
-
-    <div class="language-overlay" id="languageOverlay"
-        role="dialog"
-        aria-modal="true"
-        aria-labelledby="languageTitle">
-
-        <div class="language-dialog">
-
-            <div class="language-mark">₿</div>
-
-            <h2 id="languageTitle">
-                Choose your language
-            </h2>
-
-            <p id="languageDescription">
-                Select the language you want to use on this page.
-            </p>
-
-            <select class="language-select" id="languageSelect">
-
-                <option value="en">English</option>
-                <option value="hi">हिन्दी — Hindi</option>
-                <option value="bn">বাংলা — Bengali</option>
-                <option value="te">తెలుగు — Telugu</option>
-                <option value="mr">मराठी — Marathi</option>
-                <option value="ta">தமிழ் — Tamil</option>
-                <option value="gu">ગુજરાતી — Gujarati</option>
-                <option value="kn">ಕನ್ನಡ — Kannada</option>
-                <option value="ml">മലയാളം — Malayalam</option>
-                <option value="pa">ਪੰਜਾਬੀ — Punjabi</option>
-                <option value="as">অসমীয়া — Assamese</option>
-                <option value="or">ଓଡ଼ିଆ — Odia</option>
-                <option value="ur">اردو — Urdu</option>
-                <option value="ne">नेपाली — Nepali</option>
-                <option value="sa">संस्कृतम् — Sanskrit</option>
-                <option value="sd">سنڌي — Sindhi</option>
-                <option value="ks">कॉशुर — Kashmiri</option>
-                <option value="gom">कोंकणी — Konkani</option>
-                <option value="doi">डोगरी — Dogri</option>
-                <option value="mni">মৈতৈলোন্ — Manipuri</option>
-                <option value="brx">बर’ — Bodo</option>
-                <option value="sat">ᱥᱟᱱᱛᱟᱲᱤ — Santali</option>
-                <option value="mai">मैथिली — Maithili</option>
-
-            </select>
-
-            <button class="language-continue"
-                id="continueLanguage"
-                type="button">
-                Continue
-            </button>
-
-            <p class="language-status"
-                id="languageStatus"
-                aria-live="polite"></p>
-
-        </div>
-    </div>
-
 
     <main class="page">
 
@@ -751,18 +552,8 @@ src="https://www.facebook.com/tr?id=1404898991813648&ev=PageView&noscript=1"
 
             </div>
 
-            <div class="language-tools">
-
-                <div class="live" id="liveLabel">
-                    Live Updates
-                </div>
-
-                <button class="language-change"
-                    id="changeLanguage"
-                    type="button">
-                    🌐 Change language
-                </button>
-
+            <div class="live" id="liveLabel">
+                Live Updates
             </div>
 
         </header>
@@ -781,7 +572,7 @@ src="https://www.facebook.com/tr?id=1404898991813648&ev=PageView&noscript=1"
             </h1>
 
             <p class="intro">
-                Join our  WhatsApp channel to receive
+                Join our WhatsApp channel to receive
                 platform announcements, plan updates, important
                 notices, and the platform access link.
             </p>
@@ -797,7 +588,7 @@ src="https://www.facebook.com/tr?id=1404898991813648&ev=PageView&noscript=1"
                 </div>
 
                 <div class="pill">
-                    UPDATES <b> channel</b>
+                    UPDATES <b>channel</b>
                 </div>
 
             </div>
@@ -807,7 +598,7 @@ src="https://www.facebook.com/tr?id=1404898991813648&ev=PageView&noscript=1"
 
             <a class="cta"
                 id="joinButton"
-                href="https://whatsapp.com/channel/0029Vb8p6cgFMqrPlAuCzG3Z"
+                href="https://whatsapp.com/channel/0029VbEHCSFJ93wOPduKZD2X"
                 target="_blank"
                 rel="noopener noreferrer">
 
@@ -816,7 +607,7 @@ src="https://www.facebook.com/tr?id=1404898991813648&ev=PageView&noscript=1"
                     fill="currentColor"
                     aria-hidden="true">
 
-                    <path d="M16.02 3C8.85 3 3.02 8.78 3.02 15.9c0 2.28.6 4.5 1.75 6.46L3 29l6.84-1.78a13.1 13.1 0 0 0 6.18 1.55h.01c7.17 0 13-5.79 13-12.9 0-3.45-1.36-6.69-3.83-9.12A12.92 12.92 0 0 0 16.02 3Zm0 23.58h-.01a10.8 10.8 0 0 1-5.5-1.5l-.4-.24-4.06 1.06 1.08-3.93-.26-.41a10.6 10.6 0 0 1-1.64-5.66c0-5.91 4.85-10.72 10.8-10.72 2.88 0 5.59 1.11 7.63 3.14a10.6 10.6 0 0 1 3.17 7.58c0 5.91-4.85 10.72-10.8 10.72Zm5.93-8.03c-.32-.16-1.9-.93-2.2-1.03-.3-.11-.52-.16-.74.16-.22.32-.84 1.03-1.03 1.24-.19.22-.38.24-.7.08-.32-.16-1.36-.5-2.59-1.59-.96-.85-1.61-1.9-1.8-2.22-.19-.32-.02-.49.14-.65.14-.14.32-.38.48-.57.16-.19.21-.32.32-.54.1-.22.05-.41-.03-.57-.08-.16-.74-1.77-1.01-2.42-.27-.64-.54-.55-.74-.56h-.63c-.22 0-.57.08-.87.41-.3.32-1.14 1.1-1.14 2.69 0 1.58 1.17 3.11 1.33 3.33.16.21 2.3 3.5 5.57 4.91.78.34 1.39.55 1.86.7.78.24 1.49.21 2.05.13.63-.1 1.9-.77 2.17-1.51.27-.75.27-1.39.19-1.52-.08-.14-.3-.22-.62-.38Z"/>
+                    <path d="M16.02 3C8.85 3 3.02 8.78 3.02 15.9c0 2.28.6 4.5 1.75 6.46L3 29l6.84-1.78a13.1 13.1 0 0 0 6.18 1.55h.01c7.17 0 13-5.79 13-12.9 0-3.45-1.36-6.69-3.83-9.12A12.92 12.92 0 0 0 16.02 3Zm0 23.58h-.01a10.8 10.8 0 0 1-5.5-1.5l-.4-.24-4.06 1.06 1.08-3.93-.26-.41a10.6 10.6 0 0 1-1.64-5.66c0-5.91 4.85-10.72 10.8-10.72 2.88 0 5.59 1.11 7.63 3.14a10.6 10.6 0 0 1 3.17 7.58c0 5.91-4.85 10.72-10.8 10.72Zm5.93-8.03c-.32-.16-1.9-.93-2.2-1.03-.3-.11-.52-.16-.74.16-.22.32-.84 1.03-1.03 1.24-.19.22-.38.24-.7.08-.32-.16-1.36-.5-2.59-1.59-.96-.85-1.61-1.9-1.8-2.22-.19-.32-.02-.49.14-.65.14-.14.32-.38.48-.57.16-.19.21-.32.32-.54.1-.22.05-.41-.03-.57-.08-.16-.74-1.77-1.01-2.42-.27-.64-.54-.55-.74-.56h-.63c-.22 0-.57.08-.87.41-.3.32-1.14 1.1-1.14 2.69 0 1.58 1.17 3.11 1.33 3.33.16.21 2.3 3.5 5.57 4.91.78.34 1.39.55 1.86.7.78.24 1.49.21 2.05.13.63-.1 1.9-.77 2.17-1.51.27-.75.27-1.39.19-1.52-.08-.14-.3-.22-.62-.38Z" />
 
                 </svg>
 
@@ -1028,7 +819,7 @@ src="https://www.facebook.com/tr?id=1404898991813648&ev=PageView&noscript=1"
                 <h3>STAY INFORMED</h3>
 
                 <p class="muted">
-                    Use only links shared through verified 
+                    Use only links shared through verified
                     channels. Never share your password, OTP,
                     wallet recovery phrase, or private keys.
                 </p>
@@ -1042,7 +833,7 @@ src="https://www.facebook.com/tr?id=1404898991813648&ev=PageView&noscript=1"
 
         <footer>
 
-            Bitcoin Investment •  WhatsApp Updates
+            Bitcoin Investment • WhatsApp Updates
 
             <br>
 
@@ -1053,451 +844,19 @@ src="https://www.facebook.com/tr?id=1404898991813648&ev=PageView&noscript=1"
     </main>
 
 
-    <!-- LANGUAGE JAVASCRIPT -->
+    <!-- WHATSAPP JAVASCRIPT -->
 
     <script>
         "use strict";
 
-        // ============================================
-        // WHATSAPP CHANNEL
-        // ============================================
-
         const WHATSAPP_CHANNEL_URL =
-            "https://whatsapp.com/channel/0029Vb8p6cgFMqrPlAuCzG3Z";
+            "https://whatsapp.com/channel/0029VbEHCSFJ93wOPduKZD2X";
 
         document.getElementById("joinButton").href =
             WHATSAPP_CHANNEL_URL;
-
-
-        // ============================================
-        // LANGUAGE SYSTEM
-        // ============================================
-
-        const LANGUAGE_STORAGE_KEY =
-            "bitcoinLandingLanguage";
-
-        const overlay =
-            document.getElementById("languageOverlay");
-
-        const select =
-            document.getElementById("languageSelect");
-
-        const continueButton =
-            document.getElementById("continueLanguage");
-
-        const changeButton =
-            document.getElementById("changeLanguage");
-
-        const statusText =
-            document.getElementById("languageStatus");
-
-
-        let originalTextNodes = [];
-
-        let currentLanguage = "en";
-
-        const translationCache = {};
-
-
-        // ============================================
-        // COLLECT ORIGINAL PAGE TEXT
-        // ============================================
-
-        function collectTextNodes() {
-
-            if (originalTextNodes.length) return;
-
-            const walker = document.createTreeWalker(
-                document.querySelector("main.page"),
-                NodeFilter.SHOW_TEXT,
-                {
-                    acceptNode(node) {
-
-                        const value = node.nodeValue.trim();
-
-                        if (!value) {
-                            return NodeFilter.FILTER_REJECT;
-                        }
-
-                        const parent = node.parentElement;
-
-                        if (
-                            !parent ||
-                            parent.closest(
-                                "script,style,svg,.language-overlay"
-                            )
-                        ) {
-                            return NodeFilter.FILTER_REJECT;
-                        }
-
-                        return NodeFilter.FILTER_ACCEPT;
-                    }
-                }
-            );
-
-            while (walker.nextNode()) {
-
-                const node = walker.currentNode;
-
-                originalTextNodes.push({
-                    node: node,
-                    original: node.nodeValue
-                });
-            }
-        }
-
-
-        // ============================================
-        // OPEN LANGUAGE POPUP
-        // ============================================
-
-        function showLanguagePicker() {
-
-            overlay.classList.add("open");
-
-            document.body.classList.add("language-lock");
-
-            statusText.textContent = "";
-
-            continueButton.disabled = false;
-
-            continueButton.textContent = "Continue";
-
-            select.value = currentLanguage;
-        }
-
-
-        // ============================================
-        // CLOSE LANGUAGE POPUP
-        // ============================================
-
-        function hideLanguagePicker() {
-
-            overlay.classList.remove("open");
-
-            document.body.classList.remove("language-lock");
-        }
-
-
-        // ============================================
-        // RESTORE ENGLISH TEXT
-        // ============================================
-
-        function restoreEnglish() {
-
-            originalTextNodes.forEach(item => {
-
-                item.node.nodeValue = item.original;
-
-            });
-
-            currentLanguage = "en";
-
-            document.documentElement.lang = "en";
-        }
-
-
-        // ============================================
-        // TRANSLATION CACHE KEY
-        // ============================================
-
-        function getCacheKey(lang, text) {
-
-            return lang + "::" + text.trim();
-        }
-
-
-        // ============================================
-        // TRANSLATE TEXT
-        // ============================================
-
-        async function translateText(text, lang) {
-
-            const key = getCacheKey(lang, text);
-
-            if (translationCache[key]) {
-
-                return translationCache[key];
-            }
-
-            const url = new URL(
-                "https://translate.googleapis.com/translate_a/single"
-            );
-
-            url.searchParams.set("client", "gtx");
-
-            url.searchParams.set("sl", "en");
-
-            url.searchParams.set("tl", lang);
-
-            url.searchParams.set("dt", "t");
-
-            url.searchParams.set("q", text);
-
-            const response = await fetch(url.toString());
-
-            if (!response.ok) {
-
-                throw new Error("Translation service unavailable");
-            }
-
-            const data = await response.json();
-
-            const translated = (data[0] || [])
-                .map(part => part[0] || "")
-                .join("");
-
-            if (!translated) {
-
-                throw new Error("Translation failed");
-            }
-
-            translationCache[key] = translated;
-
-            // Save translated text locally.
-
-            try {
-
-                const storageKey =
-                    "btcTranslationCache_" + lang;
-
-                const savedCache = JSON.parse(
-                    localStorage.getItem(storageKey) || "{}"
-                );
-
-                savedCache[text] = translated;
-
-                localStorage.setItem(
-                    storageKey,
-                    JSON.stringify(savedCache)
-                );
-
-            } catch (error) {
-
-                console.warn("Translation cache could not be saved.");
-            }
-
-            return translated;
-        }
-
-
-        // ============================================
-        // APPLY SELECTED LANGUAGE
-        // ============================================
-
-        async function applyLanguage(lang) {
-
-            collectTextNodes();
-
-            if (lang === "en") {
-
-                restoreEnglish();
-
-                return;
-            }
-
-            let savedCache = {};
-
-            try {
-
-                savedCache = JSON.parse(
-                    localStorage.getItem(
-                        "btcTranslationCache_" + lang
-                    ) || "{}"
-                );
-
-            } catch (error) {
-
-                savedCache = {};
-            }
-
-            const items = originalTextNodes.filter(item =>
-                item.original.trim()
-            );
-
-            let completed = 0;
-
-            // Translate in small batches.
-
-            for (let i = 0; i < items.length; i += 4) {
-
-                const batch = items.slice(i, i + 4);
-
-                const results = await Promise.all(
-
-                    batch.map(async item => {
-
-                        const source = item.original;
-
-                        const cached =
-                            savedCache[source] ||
-                            translationCache[
-                                getCacheKey(lang, source)
-                            ];
-
-                        if (cached) {
-
-                            return cached;
-                        }
-
-                        return await translateText(source, lang);
-                    })
-
-                );
-
-                batch.forEach((item, index) => {
-
-                    item.node.nodeValue = results[index];
-
-                });
-
-                completed += batch.length;
-
-                statusText.textContent =
-                    "Translating page… " +
-                    Math.round(
-                        completed / items.length * 100
-                    ) + "%";
-            }
-
-            currentLanguage = lang;
-
-            document.documentElement.lang = lang;
-        }
-
-
-        // ============================================
-        // CONTINUE BUTTON
-        // ============================================
-
-        continueButton.addEventListener("click", async () => {
-
-            const chosenLanguage = select.value || "en";
-
-            continueButton.disabled = true;
-
-            continueButton.textContent = "Please wait…";
-
-            statusText.textContent =
-                chosenLanguage === "en"
-                    ? "Opening page…"
-                    : "Preparing your language…";
-
-            try {
-
-                await applyLanguage(chosenLanguage);
-
-                localStorage.setItem(
-                    LANGUAGE_STORAGE_KEY,
-                    chosenLanguage
-                );
-
-                hideLanguagePicker();
-
-            } catch (error) {
-
-                console.error("Language translation error:", error);
-
-                statusText.textContent =
-                    "Automatic translation is temporarily unavailable. Please try again or select English.";
-
-                continueButton.disabled = false;
-
-                continueButton.textContent = "Try again";
-            }
-        });
-
-
-        // ============================================
-        // CHANGE LANGUAGE BUTTON
-        // ============================================
-
-        changeButton.addEventListener("click", () => {
-
-            showLanguagePicker();
-
-        });
-
-
-        // ============================================
-        // FIRST VISIT AND RETURN VISITS
-        // ============================================
-
-        document.addEventListener("DOMContentLoaded", async () => {
-
-            collectTextNodes();
-
-            const savedLanguage =
-                localStorage.getItem(LANGUAGE_STORAGE_KEY);
-
-            const languageExists =
-                Array.from(select.options).some(option =>
-                    option.value === savedLanguage
-                );
-
-            // First visit: open popup.
-
-            if (!savedLanguage || !languageExists) {
-
-                showLanguagePicker();
-
-                return;
-            }
-
-            currentLanguage = savedLanguage;
-
-            select.value = savedLanguage;
-
-            // English does not need translation.
-
-            if (savedLanguage === "en") {
-
-                return;
-            }
-
-            // Load previously selected language.
-
-            overlay.classList.add("open");
-
-            document.body.classList.add("language-lock");
-
-            continueButton.disabled = true;
-
-            continueButton.textContent = "Loading…";
-
-            statusText.textContent =
-                "Loading your saved language…";
-
-            try {
-
-                await applyLanguage(savedLanguage);
-
-                hideLanguagePicker();
-
-            } catch (error) {
-
-                console.error(error);
-
-                localStorage.removeItem(
-                    LANGUAGE_STORAGE_KEY
-                );
-
-                showLanguagePicker();
-
-                statusText.textContent =
-                    "Please select your language again.";
-            }
-        });
 
     </script>
 
 </body>
 
 </html>
-
-
-
-
-
-
-
